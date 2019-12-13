@@ -1,0 +1,38 @@
+<%- include ('header'); %>
+
+<section class="formlog">
+  <h1 class="aligntext">Inscription</h1>
+
+<%- include('./partials/messages.ejs');%>
+  
+  <form action="/users/register" method="POST">
+            
+    <label class="formalign" for="name">Nom & Prenom</label>
+            
+    <input type="name" id="name" name="name" placeholder="Entrer nom & prenom" value="<%= typeof name != 'undefined' ? name : '' %>" />
+    
+    <label class="formalign" for="username">Pseudonyme</label>
+            
+    <input type="username" id="username" name="username" placeholder="Entrer pseudo" value="<%= typeof username != 'undefined' ? username : '' %>" />
+
+    <label class="formalign" for="email">Email</label>
+            
+    <input type="email" id="email" name="email" placeholder="Entrer Email" value="<%= typeof email != 'undefined' ? email : '' %>"/>
+            
+    <label class="formalign" for="password">Mot de passe</label>
+            
+    <input type="password" id="password" name="password" placeholder="Creer mdp" value="<%= typeof password != 'undefined' ? password : '' %>" />
+            
+    <label class="formalign" for="password_confirm">Confirmer Mot de passe</label>
+            
+    <input type="password" id="password_confirm" name="password_confirm" placeholder="Confirmer mdp" value="<%= typeof password_confirm != 'undefined' ? password_confirm : '' %>"/>
+          
+    <button class="btnlogin" type="submit">S'inscrire</button>
+  
+  </form>
+        
+  <p class="aligntext">Déjà un compte ? <a href="/users/login">Connectez-vous</a></p>
+      
+</section>
+
+<%- include ('footer'); %>

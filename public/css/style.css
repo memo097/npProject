@@ -1,0 +1,63 @@
+body {
+    background-image: url(./musicimg/00.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headbar {
+    background:rgba(13, 13, 13, 0.410);
+    border-radius: 10px;
+    width: 75%;
+    margin: auto;
+    margin-top: 14px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px white;
+    margin-bottom: 75px;
+    padding-top: 16px;
+}
+.logo {
+    margin-left: 10px;
+}
+.listbar a {
+    color: white;
+}
+.listbar ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 60px;
+}
+.listbar{
+    width: 100%;
+    text-align: right; 
+}
+
+.formlog{
+    background: rgba(13, 13, 13, 0.410);
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    border-radius: 10px;
+    border: solid 1px white;
+    color: white;
+}
+.formalign{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15px;
+}
+.aligntext{
+    margin: 20px 0px 20px 0px;
+}
+.btnlogin{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 25px;
+    background: white;
+}
