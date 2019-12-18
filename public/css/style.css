@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: row;
     border: solid 1px white;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
     padding-top: 16px;
 }
 .logo {
@@ -60,4 +60,69 @@ body {
     cursor: pointer;
     padding: 10px 25px;
     background: white;
+}
+footer{
+    height: 40px;
+    background: rgba(13, 13, 13, 0.8);
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+.album{
+    color: white;
+}
+
+.onglet{
+    display: flex;
+    flex-direction: column;
+}
+
+#album {
+    float: left;
+    text-align: center;
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+.haut{
+    border: solid 1px white
+}
+.bas{
+    border: solid 1px white
+}
+.bas a{
+    color: white;
+}
+
+.formnews{
+    width: 50%;
+    text-align:center;
+    margin: auto;
+}
+.formnews input {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+}
+.formnews button{
+    margin-top: 20px;
+}
+.actuimg img{
+    width: 300px;
+    height: 200px;
+    border: solid 1px white;
+}
+.actu {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.soustitre{
+    color: white;
+    margin-left: 75px;
+    margin-top: 50px;
+}
+.actutext{
+    margin-left: 50px;
+    width: 64%;
 }

@@ -13,16 +13,16 @@ router.get('/login', (req, res) => res.render('login'));
 router.get('/register', (req, res) => res.render('register'));
 
 // Welcome Page
-router.get('/accueil', (req, res) => res.render('accueil'));
+// router.get('/accueil', (req, res) => res.render('accueil'));
 
 // News Page
-router.get('/news', (req, res) => res.render('news'));
+// router.get('/news', (req, res) => res.render('news'));
 
 // Album Page
-router.get('/album', (req, res) => res.render('album'));
+// router.get('/album', (req, res) => res.render('album'));
 
 // Concert Page
-router.get('/concert', (req, res) => res.render('concert'));
+// router.get('/concert', (req, res) => res.render('concert'));
 
 // Register Handle
 router.post('/register', (req, res) => {
@@ -55,7 +55,7 @@ router.post('/register', (req, res) => {
         })
     } else {
         // Validation passed
-        User.find({ email: email, username: username})
+        User.findOne({ email: email})
             .then(user => {
                 console.log(user)
                 if(user) {
