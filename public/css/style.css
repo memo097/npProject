@@ -1,7 +1,7 @@
 body {
     background-image: url(./musicimg/00.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
 }
 .headbar {
     background:rgba(13, 13, 13, 0.410);
@@ -40,7 +40,9 @@ body {
     border-radius: 10px;
     border: solid 1px white;
     color: white;
+    margin-bottom: 157px;
 }
+
 .formalign{
     display: flex;
     flex-direction: column;
@@ -60,13 +62,6 @@ body {
     cursor: pointer;
     padding: 10px 25px;
     background: white;
-}
-footer{
-    height: 40px;
-    background: rgba(13, 13, 13, 0.8);
-    color: white;
-    width: 100%;
-    bottom: 0;
 }
 .album{
     color: white;
@@ -125,4 +120,9 @@ footer{
 .actutext{
     margin-left: 50px;
     width: 64%;
+    background-color: #020812ee;
+}
+.footers{
+    color: white;
+    background:rgba(13, 13, 13, 0.644);
 }
