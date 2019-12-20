@@ -2,7 +2,7 @@
 
 ## Ce projet a été realiser dans le cadre de ma formation chez Becode  
 
-## Site d'actualité sur de la musique  
+## Site d'actualité sur la musique  
 
 ### Langages et frameworks:  
 - HTML
