@@ -12,18 +12,6 @@ router.get('/login', (req, res) => res.render('login'));
 // Register Page
 router.get('/register', (req, res) => res.render('register'));
 
-// Welcome Page
-// router.get('/accueil', (req, res) => res.render('accueil'));
-
-// News Page
-// router.get('/news', (req, res) => res.render('news'));
-
-// Album Page
-// router.get('/album', (req, res) => res.render('album'));
-
-// Concert Page
-// router.get('/concert', (req, res) => res.render('concert'));
-
 // Register Handle
 router.post('/register', (req, res) => {
     const { name, username, email, password, password_confirm} = req.body;

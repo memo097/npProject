@@ -12,7 +12,10 @@ router.get('/', (req, res) => res.render('accueil'))
 router.get('/dashboard', ensureAuthenticated, (req, res) => res.render('dashboard', {
     name: req.user.name
 }));
-// Connect API
+
+// Connect API Concert
+
+// Connect API AlBum
 let data = ""
 
     var req = unirest("GET", "https://api.deezer.com/chart/0/albums");
@@ -26,7 +29,7 @@ let data = ""
     req.end(function (res) {
         if (res.error) throw new Error(res.error);
         data= res.body.data
-        console.log(res.body.data[0]);
+        // console.log(res.body.data[0]);
 
     });
 

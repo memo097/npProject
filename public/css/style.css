@@ -82,7 +82,8 @@ body {
     border: solid 1px white
 }
 .bas{
-    border: solid 1px white
+    border: solid 1px white;
+    background: black;
 }
 .bas a{
     color: white;
