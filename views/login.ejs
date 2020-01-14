@@ -1,0 +1,27 @@
+<%- include ('header'); %>
+
+<section class="formlog">
+
+  <h1 class="aligntext">Login</h1>
+
+<%- include('./partials/messages.ejs');%>
+
+  <form  action="/users/login" method="POST">
+
+    <label class="formalign" for="email">Email</label>
+
+      <input type="email" id="email" name="email" placeholder="Enter Email"/>
+
+    <label class="formalign" for="password">Password</label>
+
+      <input type="password" id="password" name="password" placeholder="Enter Password"/>
+
+    <button type="submit" class="btnlogin"><b>Connection</b></button>
+
+  </form>
+
+  <p class="aligntext">Pas inscrit ? <a href="/users/register">Cliquez Ici</a></p>
+
+</section>
+
+<%- include ('footer'); %>

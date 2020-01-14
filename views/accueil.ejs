@@ -1,0 +1,28 @@
+<%- include ('header'); %>
+
+<div class="formnews">
+    <form action="#" method="POST">
+        <input type="text" name="title" id="title" placeholder="Titre">
+        <input type="textarea" name="description" id="description" placeholder="Text article" row="4"> </input>
+        <input type="text" name="img" id="img" placeholder="Lien de l'image">
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+
+<h1 style="color: white;">Actualité</h1>
+
+<% for(var i=0; i < posts.length; i++) {%>
+<div class="soustitre">
+    <h3><%= posts[i].title %></h3>
+    <div class="actu">
+        <div class="actuimg">
+            <img src=<%- posts[i].img %>>
+        </div>
+        <div class="actutext">
+            <p><%= posts[i].description %></p>
+        </div>
+    </div>
+</div>
+<% } %>
+
+<%- include ('footer'); %>

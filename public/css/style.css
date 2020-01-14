@@ -1,0 +1,129 @@
+body {
+    background-image: url(./musicimg/00.jpg);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+.headbar {
+    background:rgba(13, 13, 13, 0.410);
+    border-radius: 10px;
+    width: 75%;
+    margin: auto;
+    margin-top: 14px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px white;
+    margin-bottom: 40px;
+    padding-top: 16px;
+}
+.logo {
+    margin-left: 10px;
+}
+.listbar a {
+    color: white;
+}
+.listbar ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 60px;
+}
+.listbar{
+    width: 100%;
+    text-align: right; 
+}
+
+.formlog{
+    background: rgba(13, 13, 13, 0.410);
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    border-radius: 10px;
+    border: solid 1px white;
+    color: white;
+    margin-bottom: 157px;
+}
+
+.formalign{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15px;
+}
+.aligntext{
+    margin: 20px 0px 20px 0px;
+}
+.btnlogin{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 25px;
+    background: white;
+}
+.album{
+    color: white;
+}
+
+.onglet{
+    display: flex;
+    flex-direction: column;
+}
+
+#album {
+    float: left;
+    text-align: center;
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+.haut{
+    border: solid 1px white
+}
+.bas{
+    border: solid 1px white;
+    background: black;
+}
+.bas a{
+    color: white;
+}
+
+.formnews{
+    width: 50%;
+    text-align:center;
+    margin: auto;
+}
+.formnews input {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+}
+.formnews button{
+    margin-top: 20px;
+}
+.actuimg img{
+    width: 300px;
+    height: 200px;
+    border: solid 1px white;
+}
+.actu {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.soustitre{
+    color: white;
+    margin-left: 75px;
+    margin-top: 50px;
+}
+.actutext{
+    margin-left: 50px;
+    width: 64%;
+    background-color: #020812ee;
+}
+.footers{
+    color: white;
+    background:rgba(13, 13, 13, 0.644);
+}

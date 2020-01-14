@@ -1,0 +1,21 @@
+<%- include('header') %>
+
+
+<section class="album">
+    <h1>Top 10 des Albums les plus écouters</h1><br><br>
+
+<% for(var i=0; i < data.length; i++) {%>
+    <div id="album">
+        <div class="onglet">
+            <div class="haut">
+                <img src=<%- data[i].cover_medium %>>            
+            </div>
+            <div class="bas">
+                <a href=<%- data[i].artist.link %>><%= data[i].artist.name %></a><br>
+                <a href=<%- data[i].link %>><%= data[i].title %></a>
+            </div>
+        </div>
+    </div>
+<% } %>
+
+</section>

@@ -1,0 +1,24 @@
+{
+  "name": "np_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memo097/npProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/memo097/npProject/issues"
+  },
+  "homepage": "https://github.com/memo097/npProject#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
