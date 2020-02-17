@@ -1,7 +1,7 @@
 body {
     background-image: url(./musicimg/00.jpg);
-    /* background-size: cover;
-    background-repeat: no-repeat; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .headbar {
     background:rgba(13, 13, 13, 0.410);
@@ -66,16 +66,14 @@ body {
 .album{
     color: white;
 }
-
 .onglet{
     display: flex;
     flex-direction: column;
 }
-
 #album {
     float: left;
     text-align: center;
-    margin-left: 250px;
+    margin-left: 100px;
     margin-bottom: 50px;
 }
 .haut{
@@ -90,9 +88,11 @@ body {
 }
 
 .formnews{
-    width: 50%;
+    width: 30%;
     text-align:center;
     margin: auto;
+    border: 1px solid white;
+    border-radius: 15px;
 }
 .formnews input {
     display: flex;
@@ -102,6 +102,7 @@ body {
 }
 .formnews button{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .actuimg img{
     width: 300px;
@@ -126,4 +127,9 @@ body {
 .footers{
     color: white;
     background:rgba(13, 13, 13, 0.644);
+    clear: both;
+}
+.tArticle{
+    color: white;
+    text-align: center;
 }

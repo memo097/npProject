@@ -7,7 +7,9 @@ var unirest = require('unirest');
 const Post = require('../models/Post');
 
 // Welcome Page
-router.get('/', (req, res) => res.render('accueil'))
+router.get('/', (req, res) =>{
+    res.redirect('/accueil');
+})
 // Dashboard
 router.get('/dashboard', ensureAuthenticated, (req, res) => res.render('dashboard', {
     name: req.user.name
@@ -44,7 +46,6 @@ router.get('/news', (req, res) =>{
 
 router.get('/accueil', (req, res) =>{
     Post.find({},function(err,posts){
-        console.log(posts)
         res.render('accueil',{posts:posts})
     })
     
@@ -60,10 +61,6 @@ router.post('/accueil', (req, res) =>{
     })
     newPost.save()
     res.redirect('accueil')
-})
-
-router.get('/concert', (req, res) =>{
-    res.render('concert')
 })
 
 module.exports = router;
