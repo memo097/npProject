@@ -69,6 +69,7 @@ body {
 .onglet{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 #album {
     float: left;
@@ -79,9 +80,14 @@ body {
 .haut{
     border: solid 1px white
 }
+.haut img{
+    width: 250px;
+    height: 250px;
+}
 .bas{
     border: solid 1px white;
     background: black;
+    width: 250px;
 }
 .bas a{
     color: white;
