@@ -20,5 +20,8 @@
   "homepage": "https://github.com/memo097/npProject#readme",
   "devDependencies": {
     "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
